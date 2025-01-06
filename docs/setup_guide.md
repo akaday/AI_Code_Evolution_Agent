@@ -25,3 +25,12 @@ To run code analysis with pylint, flake8, and SonarQube, follow these steps:
 1. Install SonarQube and SonarScanner by following the official SonarQube documentation.
 2. Configure SonarQube by setting up a `sonar-project.properties` file in the root directory of the repository. This file should include the necessary project settings and paths.
 3. Run SonarQube analysis: `sonar-scanner`
+
+### Mypy
+1. Install mypy: `pip install mypy`
+2. Create a `mypy.ini` configuration file in the root directory of the repository to customize mypy's behavior.
+3. Run mypy: `mypy <your_python_file.py>`
+
+### Bandit
+1. Install bandit: `pip install bandit`
+2. Run bandit: `bandit -r <your_python_directory>`
