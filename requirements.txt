@@ -2,3 +2,6 @@ numpy
 pandas
 tensorflow
 transformers
+pylint
+flake8
+sonarqube-scanner
