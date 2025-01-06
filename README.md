@@ -1,3 +1,20 @@
+# AI Code Evolution Agent
+This project aims to develop an AI agent capable of evolving code by understanding, generating, testing, and iterating on existing codebases.
+
+## Features
+- Code analysis and comprehension
+- Code generation
+- Automated testing and validation
+- Iterative improvement
+
+## Setup
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the project: `python src/main.py`
+
+## Contributing
+Contributions are welcome! Feel free to submit issues or pull requests.
+
 Repository: AI_Code_Evolution_Agent
 
   ├── README.md
