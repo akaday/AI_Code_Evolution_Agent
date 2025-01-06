@@ -1,0 +1,37 @@
+[MASTER]
+ignore=CVS
+jobs=1
+load-plugins=pylint.extensions.mccabe
+
+[MESSAGES CONTROL]
+disable=
+    C0111,  # Missing docstring
+    C0103,  # Variable name doesn't conform to snake_case naming style
+    R0903,  # Too few public methods
+
+[REPORTS]
+output-format=colorized
+
+[FORMAT]
+max-line-length=100
+indent-string='    '
+
+[DESIGN]
+max-args=5
+max-attributes=10
+max-locals=15
+max-returns=6
+max-branches=12
+max-statements=50
+max-parents=7
+max-public-methods=20
+
+[IMPORTS]
+known-standard-library=collections,datetime,functools,heapq,itertools,json,math,os,re,sys,time
+known-third-party=numpy,pandas,tensorflow,transformers
+
+[VARIABLES]
+dummy-variables-rgx=_|dummy
+
+[TYPECHECK]
+generated-members=numpy.*,pandas.*,tensorflow.*,transformers.*
