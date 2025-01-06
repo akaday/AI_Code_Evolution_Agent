@@ -19,6 +19,20 @@ To run code analysis with pylint, flake8, and SonarQube, follow these steps:
 3. Run flake8: `flake8 <your_python_file.py>`
 4. Run SonarQube analysis: `sonar-scanner`
 
+## Continuous Integration (CI) Pipeline
+This project uses GitHub Actions to set up a Continuous Integration (CI) pipeline. The CI pipeline is configured to automatically run tests and ensure code quality on every push or pull request.
+
+### CI Pipeline Setup
+1. Create a new directory `.github/workflows` in the root of your repository if it doesn't already exist.
+2. Inside the `.github/workflows` directory, create a new file named `ci.yml`.
+3. Define the workflow in the `ci.yml` file to run your tests and code quality checks.
+
+### CI Pipeline Usage
+The CI pipeline is triggered on specific events such as `push` or `pull_request`. It includes the following steps:
+1. Set up the Python environment using `actions/setup-python`.
+2. Install dependencies using `pip install -r requirements.txt`.
+3. Run tests and code quality checks.
+
 ## Contributing
 Contributions are welcome! Feel free to submit issues or pull requests.
 
