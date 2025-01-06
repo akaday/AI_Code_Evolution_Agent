@@ -1,0 +1,10 @@
+[
+    {
+        "function": "def add(a, b): return a + b",
+        "comment": "This function adds two numbers."
+    },
+    {
+        "function": "def multiply(a, b): return a * b",
+        "comment": "This function multiplies two numbers."
+    }
+]
