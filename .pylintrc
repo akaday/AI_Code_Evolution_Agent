@@ -1,7 +1,7 @@
 [MASTER]
 ignore=CVS
 jobs=1
-load-plugins=pylint.extensions.mccabe
+load-plugins=pylint.extensions.mccabe,pylint.extensions.docparams,pylint.extensions.bad_builtin
 
 [MESSAGES CONTROL]
 disable=
@@ -13,18 +13,18 @@ disable=
 output-format=colorized
 
 [FORMAT]
-max-line-length=100
+max-line-length=80
 indent-string='    '
 
 [DESIGN]
-max-args=5
-max-attributes=10
-max-locals=15
-max-returns=6
-max-branches=12
-max-statements=50
-max-parents=7
-max-public-methods=20
+max-args=4
+max-attributes=8
+max-locals=10
+max-returns=4
+max-branches=8
+max-statements=40
+max-parents=5
+max-public-methods=15
 
 [IMPORTS]
 known-standard-library=collections,datetime,functools,heapq,itertools,json,math,os,re,sys,time
